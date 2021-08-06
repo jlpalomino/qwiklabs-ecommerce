@@ -95,6 +95,11 @@ view: order_items {
     sql: ${TABLE}.user_id ;;
   }
 
+  measure: total_sales {
+    type: sum
+    sql: ${sale_price} ;;
+    value_format_name: usd_0
+  }
 
   measure: average_sale_price {
     type: average
