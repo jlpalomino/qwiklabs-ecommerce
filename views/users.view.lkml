@@ -90,6 +90,7 @@ view: users {
     sql: ${TABLE}.zip ;;
   }
 
+
   measure: count {
     type: count
     drill_fields: [id, last_name, first_name, events.count, order_items.count]
